@@ -20,10 +20,10 @@ void main()
   for (i = start; i > 1; i--) {
 
     prime = true;
-    j = i;
+    j = i-1;
 
     do {
-       if((i%j == 0) && (i != j)) {
+       if(i%j == 0) {
          prime = false;
        }
        j--;
@@ -33,7 +33,8 @@ void main()
       printf("| %i ", i);
     }
   }
-
+  if (start>=2)
+	printf("| 2 ");
   printf("|\n");
 
 }
