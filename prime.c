@@ -22,19 +22,17 @@ void main()
     prime = true;
     j = i-1;
 
-    do {
+    while (prime && (j > 1) {
        if(i%j == 0) {
          prime = false;
        }
        j--;
-    } while (prime && (j > 1));
+    }
               
     if (prime) {
       printf("| %i ", i);
     }
   }
-  if (start>=2)
-	printf("| 2 ");
   printf("|\n");
 
 }
